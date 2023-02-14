@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica&display=swap");
+
+.heading {
+  font-family: "Finlandica", "Segoe UI", sans-serif;
+  text-align: center;
+  color: #4fefcade;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-panel {
+  margin: 10px auto;
+  width: 85%;
+  height: 80vh;
+}
+
+.source {
+  transition: all 300ms ease;
+  background-color: #282828de;
+  color: white;
+  font-size: 15px;
+  border: none;
+  outline: 1px solid #4fefcade;
+  border-radius: 5px;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.source:hover {
+  background-color: #2d2d2dde;
+}
+
+.right-panel {
+  overflow: auto;
+  transition: all 300ms ease;
+  background-color: #282828de;
+  width: 85%;
+  height: 80vh;
+  outline: 1px solid #4fefcade;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.right-panel:hover {
+  background-color: #2d2d2d;
+}
