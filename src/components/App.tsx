@@ -4,6 +4,7 @@ import { marked } from "marked";
 import DOMPurify from "isomorphic-dompurify";
 
 import "../styles/App.css";
+import Footer from "./Footer";
 
 function App() {
   const [markdown, setMarkdown] = useState("# Hello world\n\nThis is _Markdown_.");
@@ -28,9 +29,12 @@ function App() {
 
         <div
           className="right-panel"
-          dangerouslySetInnerHTML={parsedMarkdown}
-        ></div>
+        >
+          <div className="parsed"
+          dangerouslySetInnerHTML={parsedMarkdown}></div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

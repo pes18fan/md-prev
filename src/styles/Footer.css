@@ -1,0 +1,13 @@
+hr {
+    color: #8b8888de;
+    width: 70%;
+    margin: 1.5rem auto;
+}
+
+.footerText {
+    text-align: center;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 12px;
+    color: #8b8888de;
+    margin: 1rem auto;
+}
