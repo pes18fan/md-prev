@@ -55,3 +55,15 @@
 .right-panel:hover {
   background-color: #2d2d2d;
 }
+
+@media screen and (max-width: 900px) {
+  .left-panel, .right-panel {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .left-panel, .right-panel {
+    width: 80%;
+  }
+}
