@@ -11,3 +11,11 @@ hr {
     color: #8b8888de;
     margin: 1rem auto;
 }
+
+a {
+    color: #33c2ffde;
+}
+
+a:visited {
+    color: #df2ddfde;
+}
