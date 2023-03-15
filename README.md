@@ -13,7 +13,7 @@ Markdown previewer written in React.
 
 ```bash
 git clone https://www.github.com/pes18fan/md-prev
-cd pes18fan.github.io
+cd md-prev
 yarn
 yarn dev
 ```
