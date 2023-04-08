@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/marked": "^4.0.8",
+    "highlight.js": "^11.7.0",
     "isomorphic-dompurify": "^1.0.0",
     "marked": "^4.2.12",
     "react": "^18.2.0",

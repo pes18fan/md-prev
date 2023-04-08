@@ -1,14 +1,27 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 import { marked } from "marked";
 import DOMPurify from "isomorphic-dompurify";
+
+import "highlight.js/styles/base16/gruvbox-dark-soft.css";
+import hljs from "highlight.js";
 
 import "../styles/App.css";
 import Footer from "./Footer";
 
 function App() {
-  const [markdown, setMarkdown] = useState("# Hello world\n\nThis is _Markdown_.");
-  const handleChange = (e: any) => setMarkdown(e.target.value);
+  const [markdown, setMarkdown] = useState(
+    "# Hello world\n\nThis is _Markdown_."
+  );
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, [markdown]);
+
+  const handleChange = (e: any) => {
+    setMarkdown(e.target.value);
+  };
 
   const parsedMarkdown = {
     __html: DOMPurify.sanitize(marked.parse(markdown)),
@@ -27,11 +40,11 @@ function App() {
           ></textarea>
         </div>
 
-        <div
-          className="right-panel"
-        >
-          <div className="parsed"
-          dangerouslySetInnerHTML={parsedMarkdown}></div>
+        <div className="right-panel">
+          <div
+            className="parsed"
+            dangerouslySetInnerHTML={parsedMarkdown}
+          ></div>
         </div>
       </div>
       <Footer />
